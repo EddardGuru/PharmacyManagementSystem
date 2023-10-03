@@ -4,9 +4,35 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PMS.App"
+        xmlns:views="clr-namespace:PMS.App.Views"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+        Title="HazemPharmacy" Height="780" Width="1280"
+        AllowsTransparency="True" Background="Transparent"
+        WindowStartupLocation="CenterScreen" WindowState="Normal"
+        WindowStyle="None">
+    <Border CornerRadius="25" Background="#F7F6F4" Padding="20">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="200" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="260" />
+            </Grid.ColumnDefinitions>
 
-    </Grid>
+
+            <!-- Aside -->
+            <!-- Main -->
+            <Grid Grid.Column="1" Margin="30 20 20 20">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="auto" />
+                </Grid.RowDefinitions>
+
+                <views:HeaderMenu Grid.Row="0"/>
+            </Grid>
+            <!-- Menu -->
+            <views:Menu Grid.Column="2"/>
+        </Grid>
+    </Border>
+   
 </Window>

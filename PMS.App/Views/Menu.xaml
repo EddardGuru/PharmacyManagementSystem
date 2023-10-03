@@ -1,0 +1,121 @@
+﻿<UserControl x:Class="PMS.App.Views.Menu"
+            xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+            xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+            xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+            xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+            xmlns:icon="http://metro.mahapps.com/winfx/xaml/iconpacks"
+            xmlns:local="clr-namespace:PMS.App.Views"
+            mc:Ignorable="d" 
+            d:DesignHeight="780" d:DesignWidth="260">
+    <Border CornerRadius="25">
+        <Border.Background>
+            <LinearGradientBrush>
+                <GradientStop Color="#FB7154" Offset="0"/>
+                <GradientStop Color="#FB6161" Offset="0.8"/>
+            </LinearGradientBrush>
+        </Border.Background>
+
+        <StackPanel>
+            <!-- Logo -->
+            <StackPanel Orientation="Horizontal" Margin="0 30 0 10"
+                        HorizontalAlignment="Center">
+                <Grid>
+                    <Border Background="White" CornerRadius="50" Width="35" Height="35"/>
+                    <Border Width="35" Height="35" BorderThickness="3" BorderBrush="White"
+                            CornerRadius="50">
+                        <Border.Effect>
+                            <DropShadowEffect BlurRadius="10" Opacity="0.3"/>
+                        </Border.Effect>
+                        <icon:PackIconMaterial Kind="HeartPulse" Width="20" Height="20"
+                                                Foreground="#FB7154"
+                                                VerticalAlignment="Center"
+                                                HorizontalAlignment="Center" />
+                    </Border>
+                </Grid>
+
+                <TextBlock Text="HP" Foreground="white" VerticalAlignment="Center"
+                            HorizontalAlignment="Center" Margin="10 0 0 3"
+                            FontSize="30" FontWeight="Normal" >
+                    <TextBlock.Effect>
+                        <DropShadowEffect Opacity="0.3" BlurRadius="10"/>
+                    </TextBlock.Effect>
+                </TextBlock>
+            </StackPanel>
+
+            <!-- Menu Items -->
+            <TextBlock Style="{StaticResource menuTitle}" Text="Main" />
+
+            <Button Style="{StaticResource menuButton}">
+                <StackPanel Orientation="Horizontal">
+                    <icon:PackIconMaterial Kind="BasketPlusOutline" Style="{StaticResource menuButtonIcon}" />
+                    <TextBlock Text="المبيعات" Style="{StaticResource menuButtonText}" />
+                </StackPanel>
+            </Button>
+
+            <Button Style="{StaticResource menuButton}">
+                <StackPanel Orientation="Horizontal">
+                    <icon:PackIconMaterial Kind="Home" Style="{StaticResource menuButtonIcon}"/>
+                    <TextBlock Text="المشتريات" Style="{StaticResource menuButtonText}"/>
+                </StackPanel>
+            </Button>
+
+            <Button Style="{StaticResource menuButton}">
+                <StackPanel Orientation="Horizontal">
+                    <icon:PackIconMaterial Kind="ClipboardTextPlayOutline" Style="{StaticResource menuButtonIcon}"/>
+                    <TextBlock Text="المرتجعات" Style="{StaticResource menuButtonText}"/>
+                </StackPanel>
+            </Button>
+
+            <Button Style="{StaticResource menuButton}">
+                <StackPanel Orientation="Horizontal">
+                    <icon:PackIconMaterial Kind="ClipboardFileOutline" Style="{StaticResource menuButtonIcon}"/>
+                    <TextBlock Text="النواقص" Style="{StaticResource menuButtonText}"/>
+                </StackPanel>
+            </Button>
+
+            <Button Style="{StaticResource menuButton}">
+                <StackPanel Orientation="Horizontal">
+                    <icon:PackIconMaterial Kind="AccountCheckOutline" Style="{StaticResource menuButtonIcon}"/>
+                    <TextBlock Text="Expired" Style="{StaticResource menuButtonText}"/>
+                </StackPanel>
+            </Button>
+
+            <Button Style="{StaticResource menuButton}">
+                <StackPanel Orientation="Horizontal">
+                    <icon:PackIconMaterial Kind="ProgressCheck" Style="{StaticResource menuButtonIcon}"/>
+                    <TextBlock Text="التقارير" Style="{StaticResource menuButtonText}"/>
+                </StackPanel>
+            </Button>
+
+            <Button Style="{StaticResource menuButton}">
+                <StackPanel Orientation="Horizontal">
+                    <icon:PackIconMaterial Kind="NotebookCheckOutline" Style="{StaticResource menuButtonIcon}"/>
+                    <TextBlock Text="الملاحظات" Style="{StaticResource menuButtonText}"/>
+                </StackPanel>
+            </Button>
+
+            <TextBlock Text="Addition" Style="{StaticResource menuTitle}"/>
+
+            <Button Style="{StaticResource menuButton}">
+                <StackPanel Orientation="Horizontal">
+                    <icon:PackIconMaterial Kind="MessageSettingsOutline" Style="{StaticResource menuButtonIcon}"/>
+                    <TextBlock Text="الادوية" Style="{StaticResource menuButtonText}"/>
+                </StackPanel>
+            </Button>
+
+            <Button Style="{StaticResource menuButton}">
+                <StackPanel Orientation="Horizontal">
+                    <icon:PackIconMaterial Kind="CogOutline" Style="{StaticResource menuButtonIcon}"/>
+                    <TextBlock Text="المورودون" Style="{StaticResource menuButtonText}"/>
+                </StackPanel>
+            </Button>
+
+            <Button Style="{StaticResource menuButton}">
+                <StackPanel Orientation="Horizontal">
+                    <icon:PackIconMaterial Kind="PhonePausedOutline" Style="{StaticResource menuButtonIcon}"/>
+                    <TextBlock Text="العملاء" Style="{StaticResource menuButtonText}"/>
+                </StackPanel>
+            </Button>
+        </StackPanel>
+    </Border>
+</UserControl>
