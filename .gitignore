@@ -478,5 +478,5 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-./PMS.App/bin
-./PMS.App/obj
+PMS.App/bin
+PMS.App/obj
