@@ -21,7 +21,7 @@
 
             <!-- Aside -->
             <!-- Main -->
-            <Grid Grid.Column="1" Margin="30 20 20 20">
+            <Grid Grid.Column="1" Margin="30 0 20 20">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="auto" />
                     <RowDefinition Height="*" />
